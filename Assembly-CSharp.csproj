@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameFrameWork\Logic\Login.cs" />
      <Compile Include="Assets\GameFrameWork\Managers\GlobalManager.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>G:/WorkSpace/IndieGameCamp2018/projectOne/projectOne/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class GlobalManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	public static GlobalManager _instance;
+	public static GlobalManager instance
+	{
+		get
+		{
+			if (null == _instance)
+			{
+				_instance = FindObjectOfType(typeof(GlobalManager))	as GlobalManager;
+			}
+			return _instance;
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public void PrintMyWord()
+	{
+		Debug.Log("<color>ME!!!<color>");
 	}
 }
